@@ -6,7 +6,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from sqlalchemy import exc
 from twilio.twiml.messaging_response import MessagingResponse
-from twilio.rest import Client
 
 
 app = Flask(__name__)
@@ -17,8 +16,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = db_path
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-client = Client('ACc4926b16d2fb56990e57eb74388c1b8c',
-                '8c5e578d554fd18386213d2da277808b')
+
 
 
 class User(db.Model):
