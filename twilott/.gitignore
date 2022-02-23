@@ -1,0 +1,40 @@
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist
+/build/
+eggs
+parts
+bin
+develop-eggs
+.installed.cfg
+scratch
+env
+venv*
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+coverage.xml
+
+.DS_Store
+
+# sphinx build and rst folder
+docs/_build
+docs/source/_rst
+
+# PyCharm/IntelliJ
+.idea
+
+#htmlcov
+*htmlcov*
+
+# PyEnv
+.python-version
+
+README.md.bak
